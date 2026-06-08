@@ -1,4 +1,4 @@
-[index.html](https://github.com/user-attachments/files/28706808/index.html)<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -128,6 +128,28 @@ textarea:focus{
 .submit-btn:hover{
     background:#003566;
 }
+
+/* ===== MOBILE RESPONSIVE ===== */
+@media screen and (max-width:768px){
+body{padding:10px;}
+.container{width:100%;border-radius:10px;}
+.header{padding:15px;}
+.header h1{font-size:22px;line-height:1.3;}
+.header h2{font-size:14px;}
+.form-section{padding:15px;}
+.form-grid{grid-template-columns:1fr !important;gap:15px;}
+input,select,textarea{width:100%;font-size:16px;}
+.employee-name{font-size:16px;}
+.dynamic-section{padding:15px;}
+.submit-btn{width:100%;}
+.field[style*="grid-column"]{grid-column:auto !important;}
+}
+@media screen and (max-width:480px){
+.header h1{font-size:18px;}
+.header h2{font-size:12px;}
+.section-title{font-size:16px;}
+}
+
 </style>
 </head>
 <body>
@@ -569,4 +591,4 @@ document.getElementById("dynamicFields").innerHTML = html;
 
 </body>
 </html>
-```
+
